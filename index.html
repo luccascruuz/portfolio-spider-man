@@ -1,266 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>  
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homem Aranha</title>
+    <title>Homem-Aranha | Portfólio</title>
+    <meta name="description" content="Portfólio do Homem-Aranha, o super-herói da vizinhança: serviços, trabalhos e contato.">
+    <meta name="theme-color" content="#2a2a2a">
 
-    <link rel="shortcut icon" href="img/iconAba.png" type="image/x-icon" />
+    <meta property="og:title" content="Homem-Aranha | Portfólio">
+    <meta property="og:description" content="O super-herói da vizinhança está disponível para novos trabalhos.">
+    <meta property="og:image" content="img/capaPrincipal.jpg">
+    <meta property="og:type" content="website">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="img/iconAba.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-    <!-- header design -->
+    <!-- header -->
     <header>
-        <a href="#" class="logo">Her<span>ó</span>i.</a>
+        <a href="#home" class="logo" aria-label="Início">Her<span>ó</span>i.</a>
 
-        <ul class="navlist">
-            <li><a href="#home" class="active">Início</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
+        <nav aria-label="Navegação principal">
+            <ul class="navlist" id="navlist">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <button type="button" class="bx bx-menu" id="menu-icon" aria-label="Abrir menu" aria-controls="navlist" aria-expanded="false"></button>
     </header>
-    <!-- home section design -->
+
+    <main>
+        <!-- home -->
         <section class="home" id="home">
             <div class="home-text">
                 <div class="slide">
                     <span class="one">Olá,</span>
-                    <span class="two">Eu sou o</span>
+                    <span class="two">eu sou o</span>
                 </div>
-                <h1>Homem Aranha</h1>
-                <h3>O Super herói da<span> vizinhança.</span></h3>
-                <p>Sou conhecido como o super herói do bairro, impeço<br>
-                    crimes na minha região a quase 5 anos e já<br>
-                    lutei contra um alienígena roxo no espaço.</p>
+                <h1>Homem-Aranha</h1>
+                <h3>O super-herói da <span>vizinhança.</span></h3>
+                <p>
+                    Sou conhecido como o super-herói do bairro. Impeço crimes
+                    na minha região há quase 5 anos e já lutei contra um
+                    alienígena roxo no espaço.
+                </p>
                 <div class="button">
-                    <a href="https://www.google.com/search?q=ol%C3%A1+homem+aranha&oq=ol%C3%A1+homem+aranha&aqs=chrome..69i57j0i22i30l3j0i15i22i30j69i64.4065j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="btn">Diga Olá</a>
-                    <a href="https://www.youtube.com/watch?v=Qhb68j91mRI" target="_blank" class="btn2"><span><i class='bx bx-play'></i></span>Assista meu trabalho</a>
-                </div>
+                    <a href="#contact" class="btn">Diga olá</a>
+                    <a href="https://www.youtube.com/watch?v=w-rhi5nbgus" target="_blank" rel="noopener noreferrer" class="btn2">
+                        <span><i class='bx bx-play' aria-hidden="true"></i></span>Assista ao meu trabalho
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- about sction design -->
+        <!-- about -->
         <section class="about" id="about">
             <div class="about-img">
-                <img data-src="img/HD-wallpaper-homem-aranha-filmes-herois-homem-aranha-marvel-spider-man.jpg" alt="foto do perfil do homem aranha">
+                <img class="lazy" loading="lazy" decoding="async" src="img/HD-wallpaper-homem-aranha-filmes-herois-homem-aranha-marvel-spider-man.jpg" width="800" height="1422" alt="Homem-Aranha de uniforme, retrato de perfil">
             </div>
 
-            <div class="about-text">
-                <h2>Sobre <span>Mim</span></h2>
-                <h4>Super Héroi engraçado(as vezes)</h4>
+            <div class="about-text reveal">
+                <h2>Sobre <span>mim</span></h2>
+                <h4>Super-herói engraçado (às vezes)</h4>
                 <p>
-                    Sou um super héroi comprometido com a justa causa, sempre ajudo todos 
-                    que eu posso, fazer o bem sem olhar a quem, esse é meu lema, a justiça 
-                    sempre prevalece. Na minha vasta experiência, lutei contra ladrões de banco 
-                    e batedores de carteira, sou conhecido como herói da vizinhança. Em dois momentos 
-                    tive a oportunidade de lutar ao lados dos Vingadores, e fui junto com Tony Stark 
-                    para o espaço em uma nave alienígena, lutamos contra um desse vilões gigantes e roxo, 
-                    não vencemos, mas ganhei experiência em combate e luta com grupo. Sou mais forte que 
-                    o soldado invernal, e solto teias pelo pulso(não, eu não solto teia por aquele lugar =D).
+                    Sou um super-herói comprometido com a justa causa e sempre ajudo todos
+                    que posso. Fazer o bem sem olhar a quem: esse é meu lema, e a justiça
+                    sempre prevalece. Na minha vasta experiência, lutei contra ladrões de banco
+                    e batedores de carteira; sou conhecido como o herói da vizinhança. Em dois momentos
+                    tive a oportunidade de lutar ao lado dos Vingadores, e fui junto com Tony Stark
+                    para o espaço em uma nave alienígena. Lutamos contra um desses vilões gigantes e roxos;
+                    não vencemos, mas ganhei experiência em combate e em luta em grupo. Sou mais forte que
+                    o Soldado Invernal e solto teias pelo pulso (não, eu não solto teia por aquele lugar =D).
                 </p>
 
-                <a href="https://pt.wikipedia.org/wiki/Homem-Aranha" target="_blank" class="btn">Mais sobre mim</a>
+                <a href="https://pt.wikipedia.org/wiki/Homem-Aranha" target="_blank" rel="noopener noreferrer" class="btn">Mais sobre mim</a>
             </div>
         </section>
-        
-        <!-- service section design -->
+
+        <!-- services -->
         <section class="services" id="services">
             <div class="main-text">
                 <p>No que sou especialista</p>
-                <h2><span>Meus</span> Serviços</h2>
+                <h2><span>Meus</span> serviços</h2>
             </div>
 
             <div class="services-content">
-                <div class="box">
+                <article class="box reveal">
                     <div class="s-icons">
-                        <i class='bx bx-run'></i>
+                        <i class='bx bx-run' aria-hidden="true"></i>
                     </div>
                     <h3>Velocidade</h3>
                     <p>
-                        Sou muito veloz quando se trata em atravesar toda a cidade,
-                        utilizo minha teia nos prédios e vou pulando de um para o outro,
-                        com isso ganho impulso e chego muito mais rápido que qualquer
-                        outro herói. Além do meu sentido aranha, que me ajuda.
+                        Sou muito veloz quando se trata de atravessar a cidade:
+                        prendo minha teia nos prédios e vou pulando de um para o outro.
+                        Com isso ganho impulso e chego muito mais rápido que qualquer
+                        outro herói. Além disso, meu sentido aranha me ajuda.
                     </p>
-                    <a href="https://thenexus.one/a-velocidade-maxima-do-homem-aranha-e-muito-mais-rapida-do-que-voce-pensa-acima-de-mach-3/#:~:text=ele%20n%C3%A3o%20deveria%20ser%20t%C3%A3o,hora%3A%20mais%20de%20Mach%203." target="_blank" class="read">Leia mais</a>
-                </div>
+                    <a href="https://thenexus.one/a-velocidade-maxima-do-homem-aranha-e-muito-mais-rapida-do-que-voce-pensa-acima-de-mach-3/" target="_blank" rel="noopener noreferrer" class="read">Leia mais</a>
+                </article>
 
-                <div class="box">
+                <article class="box reveal">
                     <div class="s-icons">
-                        <i class='bx bxs-vial' ></i>
+                        <i class='bx bxs-vial' aria-hidden="true"></i>
                     </div>
                     <h3>Inteligência</h3>
                     <p>
-                        Sou a pessoa mais inteligente da minha turma, eu criei minhas 
-                        próprias teias no laboratório da escola, com ajuda de uma amigo 
+                        Sou a pessoa mais inteligente da minha turma. Criei minhas
+                        próprias teias no laboratório da escola e, com a ajuda de um amigo,
                         consegui hackear o uniforme que Tony Stark fez pra mim.
-                        Consegui achar a cura para vários vilões de outras
+                        Também achei a cura para vários vilões de outras
                         dimensões.
                     </p>
-                    <a href="https://epipoca.com.br/por-que-a-inteligencia-de-peter-parker-e-muito-superior-aos-seus-poderes/" target="_blank" class="read">Leia mais</a>
-                </div>
+                    <a href="https://epipoca.com.br/por-que-a-inteligencia-de-peter-parker-e-muito-superior-aos-seus-poderes/" target="_blank" rel="noopener noreferrer" class="read">Leia mais</a>
+                </article>
 
-                <div class="box">
+                <article class="box reveal">
                     <div class="s-icons">
-                        <i class='bx bxs-wink-tongue' ></i>
+                        <i class='bx bxs-wink-tongue' aria-hidden="true"></i>
                     </div>
                     <h3>Comediante</h3>
                     <p>
-                        Faço boas piadas constantementes, todos adoram, trago boas 
-                        referências nas minhas piadas, trocadilhos entre outro. Sempre 
-                        estou de bom humor, até na hora da luta consigo pensar em coisas
+                        Faço boas piadas constantemente e todos adoram. Trago boas
+                        referências, trocadilhos e muito mais. Estou sempre
+                        de bom humor: até na hora da luta consigo pensar em coisas
                         engraçadas.
                     </p>
-                    <a href="https://thenexus.one/10-piadas-de-quadrinhos-mais-engracadas-do-homem-aranha-de-acordo-com-ranker/" target="_blank" class="read">Leia mais</a>
-                </div>
+                    <a href="https://thenexus.one/10-piadas-de-quadrinhos-mais-engracadas-do-homem-aranha-de-acordo-com-ranker/" target="_blank" rel="noopener noreferrer" class="read">Leia mais</a>
+                </article>
             </div>
         </section>
-                
-        <!-- portfolio section design -->
+
+        <!-- portfolio -->
         <section class="portfolio" id="portfolio">
             <div class="main-text">
-                <p>Portfolio</p>
-                <h2><span>Últimos</span> Trabalhos</h2>
+                <p>Portfólio</p>
+                <h2><span>Últimos</span> trabalhos</h2>
             </div>
 
             <div class="portfolio-content">
-                <div class="row">
-                    <img data-src="img/port1.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port1.jpg" width="1024" height="576" alt="Homem-Aranha na batalha do aeroporto em Guerra Civil">
                     <div class="layer">
-                        <h5>Guerra civil</h5>
-                        <p>Lutei contra o cap américa no aeroporto da alemanha</p>
-                        <a href="https://pt.wikipedia.org/wiki/Capit%C3%A3o_Am%C3%A9rica:_Guerra_Civil" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <h5>Guerra Civil</h5>
+                        <p>Lutei contra o Capitão América no aeroporto da Alemanha.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Capit%C3%A3o_Am%C3%A9rica:_Guerra_Civil" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre Guerra Civil">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
-                    <img data-src="img/port2.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port2.jpg" width="1000" height="562" alt="Homem-Aranha enfrentando o Abutre">
                     <div class="layer">
                         <h5>Abutre voador</h5>
-                        <p>
-                            Impedi os roubos de caminhão da indústria Stark
-                        </p>
-                        <a href="https://www.adorocinema.com/filmes/filme-209778/" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <p>Impedi os roubos de caminhão das Indústrias Stark.</p>
+                        <a href="https://www.adorocinema.com/filmes/filme-209778/" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre o Abutre">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
-                    <img data-src="img/port3.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port3.jpg" width="1000" height="600" alt="Homem-Aranha em batalha no espaço">
                     <div class="layer">
                         <h5>Luta no espaço</h5>
-                        <p>
-                            Fui pro espaço e lutei contra uma alienígena roxo
-                        </p>
-                        <a href="https://pt.wikipedia.org/wiki/Avengers:_Infinity_War" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <p>Fui pro espaço e lutei contra um alienígena roxo.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Avengers:_Infinity_War" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre a luta no espaço">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
-                    <img data-src="img/port4.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port4.jpg" width="1086" height="652" alt="Homem-Aranha na batalha final contra o alienígena">
                     <div class="layer">
                         <h5>Guerra louca</h5>
-                        <p>
-                            Lutamos contra o alienígena de novo, mas agora vencemos.
-                        </p>
-                        <a href="https://www.adorocinema.com/filmes/filme-232669/" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <p>Lutamos contra o alienígena de novo, mas agora vencemos.</p>
+                        <a href="https://www.adorocinema.com/filmes/filme-232669/" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre a guerra louca">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
-                    <img data-src="img/port5.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port5.jpg" width="768" height="432" alt="Três Homens-Aranha lado a lado no multiverso">
                     <div class="layer">
                         <h5>Multiverso</h5>
-                        <p>
-                            Descobri que tem multiverso e lutei do lado de outros homens aranhas
-                        </p>
-                        <a href="https://www.adorocinema.com/filmes/filme-256880/" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <p>Descobri que existe um multiverso e lutei ao lado de outros Homens-Aranha.</p>
+                        <a href="https://www.adorocinema.com/filmes/filme-256880/" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre o multiverso">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
 
-                <div class="row">
-                    <img data-src="img/port7.jpg" alt="">
+                <article class="row">
+                    <img class="lazy" loading="lazy" decoding="async" src="img/port7.jpg" width="1200" height="750" alt="Versões do Homem-Aranha de vários universos">
                     <div class="layer">
                         <h5>Aranhaverso</h5>
-                        <p>
-                            Existem vários como eu em infinitos universos
-                        </p>
-                        <a href="https://pt.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse" target="_blank">
-                            <i class='bx bx-link-external'></i>
+                        <p>Existem vários como eu em infinitos universos.</p>
+                        <a href="https://pt.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse" target="_blank" rel="noopener noreferrer" aria-label="Saiba mais sobre o Aranhaverso">
+                            <i class='bx bx-link-external' aria-hidden="true"></i>
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- contact section design -->
+        <!-- contact -->
         <section class="contact" id="contact">
             <div class="contact-text">
-                <h2>
-                    Fale <span>Comigo!</span>
-                </h2>
-                <h4>Se suas cidade estiver em perigo.</h4>
+                <h2>Fale <span>comigo!</span></h2>
+                <h4>Se a sua cidade estiver em perigo.</h4>
                 <p>
-                    Sou um super herói com responsabilidade social e com
-                    várias piadas muito boas    .           
+                    Sou um super-herói com responsabilidade social e com
+                    várias piadas muito boas.
                 </p>
-                <div class="list">
-                    <li><a href="#">011998889988</a></li>
-                    <li><a href="#">homemaranha123@avengers.com</a></li>
-                    <li><a href="#">Curta e compartilhe</a></li>
-                </div>
+                <ul class="list">
+                    <li><a href="tel:+5511998889988">(11) 99888-9988</a></li>
+                    <li><a href="mailto:homemaranha123@avengers.com">homemaranha123@avengers.com</a></li>
+                    <li><a href="#" id="share-link">Curta e compartilhe</a></li>
+                </ul>
 
                 <div class="contact-icons">
-                    <a href="https://www.youtube.com/@MarvelHQBR" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                    <a href="https://www.instagram.com/explore/tags/homemaranha/" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/SpiderManBRA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://pt-br.facebook.com/HomemAranha/" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="https://www.youtube.com/@MarvelHQBR" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class='bx bxl-youtube' aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/explore/tags/homemaranha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram' aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/SpiderManBRA" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+                    <a href="https://pt-br.facebook.com/HomemAranha/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class='bx bxl-facebook-circle' aria-hidden="true"></i></a>
                 </div>
-
             </div>
 
             <div class="contact-form">
-                <form action="">
-                    <input type="name" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu email" required>
-                    <input type="" placeholder="Seu telefone" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Como posso te ajudar" required></textarea>
-                    <input type="submit" value="Enviar" class="submit" required>
+                <form id="contact-form" novalidate>
+                    <label class="sr-only" for="nome">Seu nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+
+                    <label class="sr-only" for="email">Seu e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" autocomplete="email" required>
+
+                    <label class="sr-only" for="telefone">Seu telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" autocomplete="tel" inputmode="tel" required>
+
+                    <label class="sr-only" for="mensagem">Como posso te ajudar?</label>
+                    <textarea id="mensagem" name="mensagem" rows="10" placeholder="Como posso te ajudar?" required></textarea>
+
+                    <button type="submit" class="submit">Enviar</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
+    </main>
 
-        <!-- portfolio section design -->
-        <section class="end">
-            <div class="last-text">
-                <p>Copyright © 2022 by Homem Aranha</p>
-            </div>
+    <!-- footer -->
+    <footer class="end">
+        <div class="last-text">
+            <p>Copyright © <span id="year">2026</span> by Homem-Aranha</p>
+        </div>
 
-            <div class="top">
-                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-            </div>
-        </section>
+        <div class="top">
+            <a href="#home" aria-label="Voltar ao topo"><i class='bx bx-up-arrow-alt' aria-hidden="true"></i></a>
+        </div>
+    </footer>
 
-        <!-- custom js link -->
-        <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
